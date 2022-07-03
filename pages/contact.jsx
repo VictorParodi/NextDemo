@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 import MainLayout from '../components/layouts/MainLayout';
 
-export default function Home() {
-  return (
+const Contact = () => {
+	return (
 		<MainLayout>
 			<h1 className={styles.title}>
-				Go to <Link href="/about">About!</Link>
+				Go to <Link href="/">Home!</Link>
 			</h1>
 
 			<p className={styles.description}>
@@ -14,5 +14,7 @@ export default function Home() {
 				<code className={styles.code}>pages/index.js</code>
 			</p>
 		</MainLayout>
-  )
+	);
 }
+
+export default Contact;
