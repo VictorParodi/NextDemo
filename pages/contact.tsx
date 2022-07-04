@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import MainLayout from '../components/layouts/MainLayout';
 
@@ -6,7 +5,7 @@ const Contact = () => {
 	return (
 		<MainLayout>
 			<h1 className={styles.title}>
-				Go to <Link href="/">Home!</Link>
+				Contact page
 			</h1>
 
 			<p className={styles.description}>

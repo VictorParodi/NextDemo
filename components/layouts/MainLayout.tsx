@@ -1,8 +1,13 @@
 import Head from "next/head";
+import React from "react";
 import Navbar from "../Navbar";
 import styles from './../../styles/Home.module.css';
 
-const MainLayout = ({children}) => {
+interface IMainLayout {
+	children:React.ReactNode
+}
+
+const MainLayout = ({children}:IMainLayout) => {
 	return (
 		<div className={styles.container}>
 			<Head>

@@ -1,5 +1,5 @@
+import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from "react";
 import MainLayout from "../../components/layouts/MainLayout";
-import Link from "next/link";
 import styles from './../../styles/Home.module.css';
 
 const Pricing = () => {
@@ -17,7 +17,7 @@ const Pricing = () => {
 	);
 }
 
-Pricing.getLayout = function getLayout(page) {
+Pricing.getLayout = function getLayout(page:ReactElement) {
 	return (
 		<MainLayout>
 			{page}
